@@ -1,0 +1,32 @@
+#local module klasörü için bunu çalıştır
+python -m venv venv
+
+sonrası?(bilinmiyor)
+source venv/bin/activate
+touch server.py
+
+Bu aşamadan sonra "tutorial-env\Scripts\activate.bat" konumuna cd komutlarıyla geçiş yaparak activate.bat dosyasını çalıştırın.
+
+local kurulumlar
+python -m pip install flask
+
+#run
+python main.py
+
+---------------------------------------------
+python -m pip install <package_name>
+
+---------------------------------------------
+
+#local modül kütüphane kayıtları için
+python -m venv venv
+.\venv\Scripts\activate
+
+#kurulumlar
+python -m pip install flask
+
+#run
+flask run
+
+#__pycache__ klasörünün kullanımını iptal eder, çalıştırdıktan sonra bu klasörü kaldırabilirsin
+$env:PYTHONDONTWRITEBYTECODE = 1
